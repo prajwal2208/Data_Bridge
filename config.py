@@ -12,7 +12,7 @@ class Config:
     REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379")
     LOG_LEVEL = os.getenv("LOG_LEVEL", "DEBUG")
     LOG_FILE = "logs/app.log"
-
+    GEMINI_KEY = os.getenv("GEMINI_KEY")
 
 class DevelopmentConfig(Config):
     DEBUG = True
